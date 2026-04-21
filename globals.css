@@ -1,0 +1,49 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 600px;
+  height: 350px;
+  background: #f5f1eb;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transform: scale(0.92);
+  transition: all 1s ease;
+}
+
+.card-show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.text {
+  font-size: 30px;
+  font-family: serif;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+  transition-delay: 0.5s;
+}
+
+.text-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
